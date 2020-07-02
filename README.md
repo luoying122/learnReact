@@ -14,4 +14,8 @@
 
 ### firstDay
 > create-react-app已经搭建好项目了，name: react-app
+
 > 先搞定路由的问题，毕竟页面跳转必要的。
+
+> src-> [mkdir router -> router.js]
+
