@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import "./index.scss";
 import PropTypes from "prop-types";
 import routers from "./router/router.js";
 import { HashRouter, Route, Switch } from "react-router-dom";

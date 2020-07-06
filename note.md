@@ -117,3 +117,5 @@ withRouter的页面必须再 route标签对里面
 因此 本项目对 router.js做了改造，只是封装路由数据，其他的跳转等都拉到app.js了
 // import { withRouter } from 'react-route-dom'
 ```
+
+> 首页模拟数据完成  之后做登录相关，期望实现微信扫一扫登录，github授权登录
