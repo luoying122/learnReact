@@ -1,74 +1,68 @@
-# learnReact
-学习react帖 记录下
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-> 为了加快学习react入门，所以就采用了react提供的create-react-app指令直接创建出项目
+## Available Scripts
 
-> 基础之前大概看过，这个帖子的话就决定从项目上入手
+In the project directory, you can run:
 
-> 这个项目周期应该会长点，只能在业余时间去慢慢学习，沉淀。
+### `npm start`
 
-> 这个项目以博客为主，开发自己的开源项目的话，个人博客也不错。预期功能，先以展示自己的文章为主吧。【最终功能是所有人都能在此网站上发布文章，查看，删除，点赞，分享】
-其中登录是首要功能，不过还不会在远程服务器部署，而且需要个人域名，现在还有点懵逼，不太清楚主要流程。
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-> 所以就边学边做，先开发出前端静态页面，然后再着手服务端开发，服务端的话看看node行不行，node+express+mysql还算熟悉点，[mogondb也可以]
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-### firstDay
-> create-react-app已经搭建好项目了，name: react-app
+### `npm test`
 
-> 先搞定路由的问题，毕竟页面跳转必要的。
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-> src-> [mkdir router -> router.js]   src -> [mkdir home->home.js   mkdir article->article] 
+### `npm run build`
 
-```js
-配置路由 暂时先这样配置路由文件之后再做具体的优化
-import React from "react";
-import { HashRouter, Route, Redirect, Switch } from "react-router-dom";
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-import Home from "../page/home/home.js";
-import Articles from "../page/article/article.js";
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-class RouteMap extends React.Component {
-  render() {
-    return (
-      <HashRouter>
-        <main>
-          <Switch>
-            <Route path="/home" exact component={Home} />
-            <Route path="/article" exact component={Articles}></Route>
-          </Switch>
-        </main>
-      </HashRouter>
-    )
-  }
-}
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-export default RouteMap;
+### `npm run eject`
 
-//关于switch 好像不能不写，因为会出现同样的路由的话，会出现问题，
-// Redirect 默认展示某一个页面
-// Switch 一旦找到 路由 就停止 不会在往下找了
-// 用了这个配置以后，有锚点，不太好看，之后要做一定的优化处理
-```
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-> 增加页面的跳转按钮，暂时是页面内的跳转。之后再增加一个公共头部，头部点击跳转  【跳转查阅资料：Link标签】
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-```js
-home/home.js
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-import React from 'React'
-import Link from 'react-router-dom'
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-class Home extends React.Component {
-  render() {
-    return (
-      <div>
-        <Link to="/home">返回home页面</Link>
-      <div>
-    )
-  }
-  return 
-}
-```
+## Learn More
 
-> 最后页面成功跳转，初步的算是完成了。第二天开始就可以设计页面的大体构造以及开发了。然后页面的话 会仿照 简书，这个网站的页面还是挺优美的。然后代码都上传到github上了
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `npm run build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
