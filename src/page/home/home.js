@@ -1,6 +1,7 @@
 import React from "react";
 import "./home.scss";
 import { testData } from "./testData";
+import { formatTime } from '../../utils/index';
 class Home extends React.Component {
   constructor(props) {
     super(props);
@@ -29,9 +30,9 @@ class Home extends React.Component {
                   <p>{item.content}</p>
                   <p>
                     <span>查看</span>
-                    <span>评论</span>
-                    <span>点赞</span>
-                    <span>{item.createTime}</span>
+                    <span>评论{item.commentNum}</span>
+                    <span>点赞{item.upNum}</span>
+                    <span>{formatTime(item.createTime)}</span>
                   </p>
                 </div>
                 <img src={item.headImg} alt="" />
