@@ -17,6 +17,13 @@ class Home extends React.Component {
     });
   }
 
+  // 跳转详情
+  getArticleDetail(art) {
+    this.props.history.push({
+      pathname: '/article/detail/' + art.id
+    })
+  }
+
   render() {
     return (
       <div className="home_page">
@@ -24,7 +31,7 @@ class Home extends React.Component {
         <div className="home_list">
           {this.state.articles.map((item, index) => {
             return (
-              <div className="home_item" key={index}>
+              <div className="home_item" key={index} onClick={()=>this.getArticleDetail(item)}>
                 <div className="left">
                   <p>{item.title}</p>
                   <p>{item.content}</p>

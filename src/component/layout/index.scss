@@ -2,13 +2,38 @@
   height: 65px;
   width: 100%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+  z-index: 2;
+  position: fixed;
+  top: -1px;
+  left: 0;
 }
 
 .main {
   width: 100%;
-}
+  padding-top: 65px;
 
-.main > .content {
-  width: 80%;
-  margin: 0 10%;
+  .co {
+    width: 80%;
+    margin: 0 10%;
+
+    .back_top {
+      position: fixed;
+      bottom: 100px;
+      right: 10px;
+    }
+  }
 }
+// @media (min-width: 1040) {
+//   .content {
+//     width: 1000px;
+//     margin: 0 auto;
+//   }
+// }
+
+// @media (max-width: 1000) {
+//   .content {
+//     width: 80%;
+//     margin: 0 10%;
+//   }
+// }

@@ -119,3 +119,21 @@ withRouter的页面必须再 route标签对里面
 ```
 
 > 首页模拟数据完成  之后做登录相关，期望实现微信扫一扫登录，github授权登录
+
+### 2020-07-07  
+> react渲染html文本
+```js
+//考虑到博客的话，文章会在编辑器中写，所以基本都是html文本，
+<div dangerouslySetInnerHTML={{_html:'First &nbsp;&nbsp;&nbsp; Second'}}></div>
+// 比vue 的v-html 写起来还麻烦点。。
+```
+
+> react css 没有域的概念因此 css引入哪个文件都是全局的。
+```js
+//可以利用scss的特性，增加命名空间，
+// css  modules     import stlye from './style.css' 
+// <div className={style.btn}></div>
+```
+> 增加回滚效果 以及 适配效果更佳，除了字体
+
+> 增加评论区页面设计

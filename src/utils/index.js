@@ -11,3 +11,8 @@ export function formatTime(time) {
 export function addZero(n) {
   return n < 10 ? "0" + n : n;
 }
+
+// 浏览器回滚卷尺高度
+export function getScrollTop() {
+  return document.documentElement.scrollTop||document.body.scrollTop;
+}

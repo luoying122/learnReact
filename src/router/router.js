@@ -1,20 +1,24 @@
-
-
 import Home from "../page/home/home.js";
 import Articles from "../page/article/article.js";
+import ArticleDetail from "../page/articleDetail/articleDetail";
 
 const config = [
   {
-    path: '/',
-    component:Home,
-    exact: true
+    path: "/",
+    component: Home,
+    exact: true,
   },
   {
-    path: '/articles',
-    component:Articles,
-    exact: true
-  }
-]
+    path: "/articles",
+    component: Articles,
+    exact: true,
+  },
+  {
+    path: "/article/detail/:value",
+    component: ArticleDetail,
+    exact: true,
+  },
+];
 
 // class RouteMap extends React.Component {
 //   render() {
