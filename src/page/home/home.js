@@ -12,6 +12,7 @@ class Home extends React.Component {
 
   // 组件渲染获取数据
   componentDidMount() {
+    console.log(window.location.search)
     this.setState({
       articles: testData,
     });

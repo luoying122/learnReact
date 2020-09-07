@@ -1,12 +1,13 @@
 import React from "react";
 //模拟数据
-import { articleDe,commentRes } from "./testData";
+import { articleDe, commentRes } from "./testData";
 import logo from "../../assets/img/logo.jpg";
 import "./detail.scss";
 import { formatTime } from "../../utils/index";
-//输入框
+//输入框≈≈≈≈
 import { Input, Button } from "antd";
 import Comment from '../../component/comment/comment';
+
 const { TextArea } = Input;
 class articleDetail extends React.Component {
   constructor(props) {
@@ -16,13 +17,11 @@ class articleDetail extends React.Component {
       comments: []
     };
   }
-
   // 组件渲染获取数据
   componentWillMount() {
     console.log(this.props.match.params.value); // 动态路由参数
     // let article_id = this.props.match.params.value
-    // 获取数据
-    // 模拟数据
+    // 获取数据    // 模拟数据
     this.setState({
       article: articleDe.data,
       comments: commentRes
@@ -52,7 +51,7 @@ class articleDetail extends React.Component {
           <TextArea rows={4} placeholder="既然来了,不如写点什么再走吧" />
           <Button className="send" type="primary">发布</Button>
         </div>
-        <Comment/>
+        <Comment />
       </div>
     );
   }

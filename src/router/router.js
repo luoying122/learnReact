@@ -1,11 +1,13 @@
 import Home from "../page/home/home.js";
 import Articles from "../page/article/article.js";
 import ArticleDetail from "../page/articleDetail/articleDetail";
-
+import Hackathon from "../page/hackathon/hack";
+import Memory from "../page/memory/memory";
+import Appm from '../page/appm/appm';
 const config = [
   {
     path: "/",
-    component: Home,
+    component: Hackathon,
     exact: true,
   },
   {
@@ -18,6 +20,20 @@ const config = [
     component: ArticleDetail,
     exact: true,
   },
+  {
+    path: "/home",
+    component: Home,
+    exact: true
+  },
+  {
+    path: '/memory',
+    component: Memory,
+    exact: true
+  },
+  {
+    path: '/appm',
+    component: Appm
+  }
 ];
 
 // class RouteMap extends React.Component {
