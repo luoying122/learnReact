@@ -1,0 +1,191 @@
+
+.photo-taginfo {
+  .info-title {
+    font-size: 18px;
+    font-family: MFJianHei_Noncommercial-Regular, MFJianHei_Noncommercial;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 18px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 4px;
+  }
+
+  .info-percent {
+    font-size: 12px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #A0DBCB;
+    line-height: 17px;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2px;
+  }
+
+  .info-tag {
+    font-size: 11px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 16px;
+
+    span {
+      padding: 0px 2px;
+      border-radius: 2px;
+      margin-right: 2px;
+    }
+
+    span:first-child {
+      background: #C59B23;
+    }
+
+    span:nth-child(2) {
+      background: #18B4B3;
+    }
+
+    span:nth-child(3) {
+      background: #0D916E;
+    }
+
+    span:nth-child(4) {
+      background: #4350CA;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pho-page {
+    width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 481px) {
+  .pho-page {
+    width: 480px;
+  }
+}
+.pho-page {
+  display: block;
+  // width: 375px;
+  // position: fixed;
+  // left: 100px;
+  // top: 100px;
+  // z-index: 9999;
+  // z-index: -1111;
+  padding-top: 76px;
+  box-sizing: border-box;
+  background: url('../../assets/img/app-bg.png') no-repeat center/100% 100%;
+
+  .photo-avatar {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    padding-left: 54px;
+
+    .i {
+      width: 96px;
+      height: 96px;
+      border: 0px solid #54E3C8;
+      background: url('../../assets/img/avatar.png') no-repeat center/100% 100%;
+    }
+
+    .t {
+      font-size: 11px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #D9DCDE;
+      line-height: 22px;
+      text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.78);
+
+      span {
+        font-size: 14px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #2AA484;
+        line-height: 20px;
+        text-shadow: 0px 0px 3px rgba(0, 255, 234, 0.22);
+      }
+    }
+  }
+
+  .photo-tag {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    padding-left: 80px;
+    box-sizing: border-box;
+    margin-bottom: 22px;
+
+    .photo-left {
+      margin-right: 32px;
+      width: 45px;
+      height: 45px;
+      border: 10px solid #1EBC92;
+      // border-left: 20px solid #1EBC92;
+      // border-bottom: 20px solid transparent;
+      border-radius: 50%;
+      box-sizing: border-box;
+      clip-path: polygon(50% 0%, 100% 0%, 100% 3600%, 50% 50%);
+      -webkit-clip-path: polygon(50% 0%, 100% 0%, 100% 3600%, 50% 50%);
+      position: relative;
+
+      .photo-le {
+        position: absolute;
+        left: -10px;
+        top: -10px;
+        width: 45px;
+        height: 45px;
+        transform: rotate(180deg);
+        border: 10px solid #1EBC92;
+        // border-left: 20px solid #1EBC92;
+        // border-bottom: 20px solid transparent;
+        border-radius: 50%;
+        box-sizing: border-box;
+        clip-path: polygon(50% 0%, 100% 0%, 100% 3600%, 50% 50%);
+        -webkit-clip-path: polygon(50% 0%, 100% 0%, 100% 3600%, 50% 50%);
+      }
+
+    }
+  }
+
+  .photo-tag:last-child {
+    margin-bottom: 40px;
+  }
+}
+
+.right {
+  width: 86px;
+  height: 24px;
+  background: url('../../assets/img/logo-white.png') center/100% 100% no-repeat;
+}
+
+
+.photo-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 18px 24px;
+  box-sizing: border-box;
+  align-items: center;
+
+  .left {
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-left: 13px;
+    }
+  }
+}
+
+// .wechat-qr {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+// }

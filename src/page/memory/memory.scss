@@ -1,0 +1,407 @@
+.memory-page {
+  width: 688px;
+  height: 408px;
+  position: fixed;
+  top: calc(50% - 204px);
+  left: calc(50% - 344px);
+  background: linear-gradient(142deg, #304366 0%, #273148 100%) rgba(0, 0, 0, 0.39);
+
+  .memory-title {
+    height: 92px;
+    padding: 17px 0 0 27px;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #D9DCDE;
+    line-height: 17px;
+
+    span {
+      font-size: 14px;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-weight: 600;
+      color: #19E0AC;
+      line-height: 20px;
+      margin: 0 10px;
+    }
+  }
+
+  .memory-con {
+    height: calc(100% - 92px);
+    background: url('../../assets/img/web-bg.png') no-repeat center/100% 100%;
+  }
+}
+
+.memory-con {
+  padding-top: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+  .memory-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 22px 0px rgba(0, 255, 199, 0.08), 0px 0px 11px 0px rgba(0, 255, 187, 0.28);
+    background: url('../../assets/img/avatar.png') no-repeat center/180% 180%;
+    border: 1px solid #54E3C8;
+    margin-bottom: 110px;
+    position: relative;
+
+    .memory-tagcontent {
+      width: 20px;
+
+      .memory-taginfo {
+        position: absolute;
+        top: 0;
+        min-width: 180px;
+
+      }
+    }
+  }
+
+  .memory-btn {
+    display: flex;
+    justify-content: center;
+
+    span {
+      font-size: 11px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #FFFFFF;
+      line-height: 16px;
+    }
+
+    .img {
+      width: 39px;
+      height: 39px;
+      margin-bottom: 8px;
+      background: #1B3943;
+    }
+
+    .save-photo,
+    .save-we {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .save-photo {
+      margin-right: 75px;
+
+      .img {
+        background: url('../../assets/img/save-photo.png') no-repeat center/100% 100%;
+      }
+    }
+
+    .save-we {
+      .img {
+        background: url('../../assets/img/save-we.png') no-repeat center/100% 100%;
+      }
+    }
+  }
+}
+
+.memory-taginfo,
+.photo-taginfo {
+  .info-title {
+    font-size: 18px;
+    font-family: MFJianHei_Noncommercial-Regular, MFJianHei_Noncommercial;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 18px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 4px;
+  }
+
+  .info-percent {
+    font-size: 12px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #A0DBCB;
+    line-height: 17px;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2px;
+  }
+
+  .info-tag {
+    font-size: 11px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 16px;
+
+    span {
+      padding: 0px 2px;
+      border-radius: 2px;
+      margin-right: 2px;
+    }
+
+    span:first-child {
+      background: #C59B23;
+    }
+
+    span:nth-child(2) {
+      background: #18B4B3;
+    }
+
+    span:nth-child(3) {
+      background: #0D916E;
+    }
+
+    span:nth-child(4) {
+      background: #4350CA;
+    }
+  }
+}
+
+.memory-tagcontent:nth-child(1) {
+  position: absolute;
+  bottom: 77px;
+  left: 35px;
+  height: 75px;
+
+  .memory-tagbg {
+    width: 13px;
+    height: 72px;
+    transform: rotate(180deg);
+    background: url('../../assets/img/line-top.png') no-repeat center/100% 100%;
+  }
+
+  .memory-taginfo {
+    left: 18px;
+    top: -8px !important;
+  }
+}
+
+.memory-tagcontent:nth-child(5) {
+  position: absolute;
+  top: -14px;
+  left: 77px;
+  height: 56px;
+
+  .memory-tagbg {
+    width: 102px;
+    height: 38px;
+    background: url('../../assets/img/line-right-top.png') no-repeat center/100% 100%;
+  }
+
+  .memory-taginfo {
+    left: 108px;
+  }
+}
+
+.memory-tagcontent:nth-child(3) {
+
+
+  position: absolute;
+  top: -8px;
+  right: 161px;
+  height: 56px;
+
+  .memory-taginfo {
+    left: -180px;
+    text-align: right;
+  }
+
+  .memory-tagbg {
+    width: 102px;
+    height: 38px;
+    background: url('../../assets/img/line-left-top.png') no-repeat center/100% 100%;
+  }
+}
+
+
+
+.memory-tagcontent:nth-child(2) {
+  position: absolute;
+  right: 161px;
+  top: 52px;
+  height: 56px;
+
+  .memory-tagbg {
+    width: 102px;
+    height: 38px;
+    background: url('../../assets/img/line-left-bottom.png') no-repeat center/100% 100%;
+  }
+
+  .memory-taginfo {
+    left: -180px;
+    text-align: right;
+    top: 26px !important;
+  }
+
+}
+
+.memory-tagcontent:nth-child(4) {
+  position: absolute;
+  top: 52px;
+  left: 76px;
+  height: 56px;
+
+  .memory-tagbg {
+    width: 108px;
+    height: 13px;
+    background: url('../../assets/img/line-right.png') no-repeat center/100% 100%;
+  }
+
+  .memory-taginfo {
+    left: 116px;
+  }
+
+}
+
+.photo-page {
+  display: block;
+  width: 375px;
+  min-height: 576px;
+  position: fixed;
+  left: 2000px;
+  top: 2000px;
+  z-index: 9999;
+  // z-index: -1111;
+  padding-top: 76px;
+  box-sizing: border-box;
+  background: url('../../assets/img/app-bg.png') no-repeat center/100% 100%;
+
+  .photo-avatar {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    padding-left: 54px;
+
+    .i {
+      width: 96px;
+      height: 96px;
+      border: 0px solid #54E3C8;
+      background: url('../../assets/img/avatar.png') no-repeat center/100% 100%;
+    }
+
+    .t {
+      font-size: 11px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #D9DCDE;
+      line-height: 22px;
+      text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.78);
+
+      span {
+        font-size: 14px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #2AA484;
+        line-height: 20px;
+        text-shadow: 0px 0px 3px rgba(0, 255, 234, 0.22);
+      }
+    }
+  }
+
+  .photo-tag {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    padding-left: 80px;
+    box-sizing: border-box;
+    margin-bottom: 22px;
+
+    .photo-left {
+      margin-right: 32px;
+      width: 45px;
+      height: 45px;
+      border: 10px solid #1EBC92;
+      // border-left: 20px solid #1EBC92;
+      // border-bottom: 20px solid transparent;
+      border-radius: 50%;
+      box-sizing: border-box;
+      clip-path: polygon(50% 0%, 100% 0%, 100% 3600%, 50% 50%);
+      -webkit-clip-path: polygon(50% 0%, 100% 0%, 100% 3600%, 50% 50%);
+      position: relative;
+
+      .photo-le {
+        position: absolute;
+        left: -10px;
+        top: -10px;
+        width: 45px;
+        height: 45px;
+        transform: rotate(180deg);
+        border: 10px solid #1EBC92;
+        // border-left: 20px solid #1EBC92;
+        // border-bottom: 20px solid transparent;
+        border-radius: 50%;
+        box-sizing: border-box;
+        clip-path: polygon(50% 0%, 100% 0%, 100% 3600%, 50% 50%);
+        -webkit-clip-path: polygon(50% 0%, 100% 0%, 100% 3600%, 50% 50%);
+      }
+
+    }
+  }
+
+  .photo-tag:last-child {
+    margin-bottom: 40px;
+  }
+}
+
+.right {
+  width: 86px;
+  height: 24px;
+  background: url('../../assets/img/logo-white.png') center/100% 100% no-repeat;
+}
+
+.m-img {
+  width: 240px;
+  max-height: 420px;
+  position: fixed;
+  top: calc(50% - 210px);
+  left: calc(50% - 120px);
+
+  span {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    color: white;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.photo-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 18px 24px;
+  box-sizing: border-box;
+  align-items: center;
+
+  .left {
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-left: 13px;
+    }
+  }
+}
+
+.wechat-qr {
+  position: fixed;
+  top: calc(50% - 80px);
+  left: calc( 50% - 80px);
+
+  span {
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% - 8px);
+    color: white;
+    
+  }
+}
