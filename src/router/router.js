@@ -1,13 +1,23 @@
+import {lazy} from 'react'
+
+// const Home = lazy(()=> import("../page/home/home.js"));
+// const Articles = lazy(()=> import("../page/article/article.js"));
+// const ArticleDetail = lazy(()=> import("../page/articleDetail/articleDetail.js"));
+// const Hackathon = lazy(()=> import("../page/hackathon/hack.js"));
+// const Memory = lazy(()=> import("../page/memory/memory.js"));
+// const Appm = lazy(()=> import("../page/appm/appm.js"));
+
 import Home from "../page/home/home.js";
 import Articles from "../page/article/article.js";
 import ArticleDetail from "../page/articleDetail/articleDetail";
 import Hackathon from "../page/hackathon/hack";
 import Memory from "../page/memory/memory";
 import Appm from '../page/appm/appm';
+
 const config = [
   {
     path: "/",
-    component: Hackathon,
+    component: Home,
     exact: true,
   },
   {
@@ -21,8 +31,8 @@ const config = [
     exact: true,
   },
   {
-    path: "/home",
-    component: Home,
+    path: "/hackathon",
+    component: Hackathon,
     exact: true
   },
   {
